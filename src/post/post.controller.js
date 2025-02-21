@@ -17,7 +17,7 @@ export const createPost = async (req, res = response) => {
 
         res.status(201).json({
             success: true,
-            msg: "Post created successfully 😁👌",
+            msg: "Post created successfully 🎉",
             post: newPost
         });
 
@@ -25,7 +25,7 @@ export const createPost = async (req, res = response) => {
         console.error(error);
         res.status(500).json({
             success: false,
-            msg: "Error creating post",
+            msg: "Error creating post ❌",
             error
         });
     }
@@ -41,14 +41,14 @@ export const updatePost = async (req, res = response) => {
         if (!post) {
             return res.status(404).json({
                 success: false,
-                msg: "Post not found"
+                msg: "Post not found 🔍❌"
             });
         }
 
         if (post.user.toString() !== userId.toString()) {
             return res.status(403).json({
                 success: false,
-                msg: "You can only edit your own posts"
+                msg: "You can only edit your own posts ✏️🚫"
             });
         }
 
@@ -60,7 +60,7 @@ export const updatePost = async (req, res = response) => {
 
         res.status(200).json({
             success: true,
-            msg: "Post updated successfully 😁👌",
+            msg: "Post updated successfully ✅",
             post
         });
 
@@ -68,7 +68,7 @@ export const updatePost = async (req, res = response) => {
         console.error(error);
         res.status(500).json({
             success: false,
-            msg: "Error updating post",
+            msg: "Error updating post ❌",
             error
         });
     }
@@ -83,14 +83,14 @@ export const deletePost = async (req, res = response) => {
         if (!post) {
             return res.status(404).json({
                 success: false,
-                msg: "Post not found"
+                msg: "Post not found 🔍❌",
             });
         }
 
         if (post.user.toString() !== userId.toString()) {
             return res.status(403).json({
                 success: false,
-                msg: "You can only delete your own posts"
+                msg: "You can only delete your own posts 🗑️🚫",
             });
         }
 
@@ -98,14 +98,14 @@ export const deletePost = async (req, res = response) => {
 
         res.status(200).json({
             success: true,
-            msg: "Post deleted successfully 😁👌"
+            msg: "Post deleted successfully 🗑️🎉",
         });
 
     } catch (error) {
         console.error(error);
         res.status(500).json({
             success: false,
-            msg: "Error deleting post",
+            msg: "Error deleting post ❌",
             error
         });
     }
@@ -126,7 +126,7 @@ export const getUserPosts = async (req, res = response) => {
         console.error(error);
         res.status(500).json({
             success: false,
-            msg: "Error fetching posts",
+            msg: "Error fetching posts ❌",
             error
         });
     }

@@ -11,7 +11,7 @@ export const updateUser = async (req, res = response) => {
         if (!existingUser) {
             return res.status(404).json({
                 success: false,
-                msg: "User not found",
+                msg: "User not found 🔍❌"
             });
         }
 
@@ -21,7 +21,7 @@ export const updateUser = async (req, res = response) => {
             if (!password) {
                 return res.status(400).json({
                     success: false,
-                    msg: "You must enter your current password to change it",
+                    msg: "You must enter your current password to change it 🔑🔒",
                 });
             }
 
@@ -29,7 +29,7 @@ export const updateUser = async (req, res = response) => {
             if (!isMatch) {
                 return res.status(400).json({
                     success: false,
-                    msg: "Current password is incorrect",
+                    msg: "Current password is incorrect ❌🔑",
                 });
             }
 
@@ -40,14 +40,14 @@ export const updateUser = async (req, res = response) => {
 
         res.status(200).json({
             success: true,
-            msg: "User updated successfully 😁👌",
+            msg: "User updated successfully ✅",
             user,
         });
     } catch (error) {
         console.error(error);
         res.status(500).json({
             success: false,
-            msg: "Error updating user",
+            msg: "Error updating user ❌",
             error,
         });
     }
@@ -59,7 +59,7 @@ export const getUserProfile = async (req, res = response) => {
         if (!user) {
             return res.status(404).json({
                 success: false,
-                msg: "User not found",
+                msg: "User not found 🔍❌",
             });
         }
 
@@ -71,7 +71,7 @@ export const getUserProfile = async (req, res = response) => {
         console.error(error);
         res.status(500).json({
             success: false,
-            msg: "Error retrieving user profile",
+            msg: "Error retrieving user profile ❌",
             error,
         });
     }

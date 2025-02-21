@@ -3,14 +3,14 @@ export const tieneRole = (...roles) => {
         if(!req.usuario){
             return res.status(500).json({
                 success: false,
-                msg: 'Se quiere verificar un rol sin validar el token primero'
+                msg: 'Trying to verify a role without validating the token first 🔑❌'
             })
         }
 
         if(!roles.includes(req.usuario.role)){
             return res.status(401).json({
                 success: false,
-                msg: `Usuario no autoizado, posee un rol ${req.usuario.role}, los roles autorizados son ${roles}`
+                msg: `Unauthorized user, has a role ${req.usuario.role}, authorized roles are ${roles} 🚫🔒`
             })
 
         }

@@ -11,7 +11,7 @@ export const createComment = async (req = request, res = response) => {
         if (!existingPost) {
             return res.status(404).json({
                 success: false,
-                msg: "Post not found"
+                msg: "Post not found 🔍❌",
             });
         }
 
@@ -20,14 +20,14 @@ export const createComment = async (req = request, res = response) => {
 
         res.status(201).json({
             success: true,
-            msg: "Comment added successfully",
+            msg: "Comment added successfully ✍️🎉",
             comment
         });
     } catch (error) {
         console.error(error);
         res.status(500).json({
             success: false,
-            msg: "Error adding comment"
+            msg: "Error adding comment ❌",
         });
     }
 };
@@ -42,14 +42,14 @@ export const updateComment = async (req = request, res = response) => {
         if (!comment) {
             return res.status(404).json({
                 success: false,
-                msg: "Comment not found"
+                msg: "Comment not found 🔍❌"
             });
         }
 
         if (comment.user.toString() !== userId.toString()) {
             return res.status(403).json({
                 success: false,
-                msg: "You can only edit your own comments"
+                msg: "You can only edit your own comments ✏️🚫",
             });
         }
 
@@ -58,14 +58,14 @@ export const updateComment = async (req = request, res = response) => {
 
         res.status(200).json({
             success: true,
-            msg: "Comment updated successfully",
+            msg: "Comment updated successfully ✅",
             comment
         });
     } catch (error) {
         console.error(error);
         res.status(500).json({
             success: false,
-            msg: "Error updating comment"
+            msg: "Error updating comment ❌",
         });
     }
 };
@@ -79,14 +79,14 @@ export const deleteComment = async (req = request, res = response) => {
         if (!comment) {
             return res.status(404).json({
                 success: false,
-                msg: "Comment not found"
+                msg: "Comment not found 🔍❌",
             });
         }
 
         if (comment.user.toString() !== userId.toString()) {
             return res.status(403).json({
                 success: false,
-                msg: "You can only delete your own comments"
+                msg: "You can only delete your own comments 🗑️🚫"
             });
         }
 
@@ -94,13 +94,13 @@ export const deleteComment = async (req = request, res = response) => {
 
         res.status(200).json({
             success: true,
-            msg: "Comment deleted successfully"
+            msg: "Comment deleted successfully 🗑️🎉"
         });
     } catch (error) {
         console.error(error);
         res.status(500).json({
             success: false,
-            msg: "Error deleting comment"
+            msg: "Error deleting comment ❌"
         });
     }
 };
@@ -119,7 +119,7 @@ export const listCommentsByPost = async (req = request, res = response) => {
         console.error(error);
         res.status(500).json({
             success: false,
-            msg: "Error fetching comments"
+            msg: "Error fetching comments ❌"
         });
     }
 };

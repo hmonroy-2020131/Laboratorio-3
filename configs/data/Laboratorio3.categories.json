@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "67b7f469de3933c3f6ecd834"
+  },
+  "name": "Informatica",
+  "createdAt": {
+    "$date": "2025-02-21T03:35:05.963Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-21T03:35:05.963Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b7fe12ef01329450961746"
+  },
+  "name": "Deportes",
+  "createdAt": {
+    "$date": "2025-02-21T04:16:18.219Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-21T04:16:18.219Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b7fe28ef0132945096174a"
+  },
+  "name": "Videojuegos",
+  "createdAt": {
+    "$date": "2025-02-21T04:16:40.412Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-21T04:16:40.412Z"
+  }
+}]

@@ -16,14 +16,14 @@ export const login = async (req, res) => {
         if (!user) {
             return res.status(400).json({
                 success: false,
-                msg: 'Credenciales incorrectas, usuario no encontrado'
+                msg: 'Incorrect credentials, user not found ❌'
             });
         }
 
         if (!user.estado) {
             return res.status(400).json({
                 success: false,
-                msg: 'El usuario está inactivo'
+                msg: 'User is inactive 🔒'
             });
         }
 
@@ -31,7 +31,7 @@ export const login = async (req, res) => {
         if (!validPassword) {
             return res.status(400).json({
                 success: false,
-                msg: 'La contraseña es incorrecta'
+                msg: 'Incorrect password 🔑❌'
             });
         }
 
@@ -39,7 +39,7 @@ export const login = async (req, res) => {
 
         return res.status(200).json({
             success: true,
-            msg: 'Inicio de sesión exitoso',
+            msg: 'Login successful ✅',
             userDetails: {
                 username: user.username,
                 token: token,
@@ -50,7 +50,7 @@ export const login = async (req, res) => {
         console.log(e);
         return res.status(500).json({
             success: false,
-            msg: "Error del servidor",
+            msg: 'Server error ⚠️',
             error: e.message
         });
     }
@@ -72,7 +72,7 @@ export const register = async (req, res) => {
 
         return res.status(201).json({
             success: true,
-            msg: "Usuario registrado exitosamente",
+            msg: 'User registered successfully 🎉',
             userDetails: {
                 user: user.email
             }
@@ -82,7 +82,7 @@ export const register = async (req, res) => {
         console.log(error);
         return res.status(500).json({
             success: false,
-            msg: "Error al registrar usuario",
+            msg: 'Error registering user ❌',
             error: error.message
         });
     }

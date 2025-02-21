@@ -3,17 +3,17 @@ import { validarCampos } from "./validar-campos.js";
 import { existenteEmail } from "../helpers/db-validator.js";
 
 export const registerValidator = [
-    body("name", "El nombre es obligatorio").not().isEmpty(),
-    body("surname", "El apellido es obligatorio").not().isEmpty(),
-    body("email", "Ingrese un correo válido").not().isEmpty().isEmail(),
+    body("name", "Name is required ✋").not().isEmpty(),
+    body("surname", "Last name is required ✋").not().isEmpty(),
+    body("email", "Please enter a valid email 📧✅").not().isEmpty().isEmail(),
     body("email").custom(existenteEmail),
-    body("password", "La contraseña debe tener al menos 8 caracteres").isLength({ min: 8}),
+    body("password", "Password must be at least 8 characters long 🔑🔢").isLength({ min: 8}),
     validarCampos
 ];
 
 export const loginValidator = [
-    body("email").optional().isEmail().withMessage("Ingrese un correo válido"),
-    body("username").optional().isString().withMessage("Ingrese un nombre de usuario válido"),
-    body("password", "La contraseña debe tener al menos 8 caracteres").isLength({ min: 8 }),
+    body("email").optional().isEmail().withMessage("Please enter a valid email 📧✅"),
+    body("username").optional().isString().withMessage("Please enter a valid username 📝✅"),
+    body("password", "Password must be at least 8 characters long 🔑🔢").isLength({ min: 8 }),
     validarCampos
 ];

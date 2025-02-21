@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "67b7f8d1d9fdda060d880516"
+  },
+  "content": "Buen primer post",
+  "user": {
+    "$oid": "67b7af91c1562f6897314da9"
+  },
+  "post": {
+    "$oid": "67b7f493de3933c3f6ecd83a"
+  },
+  "createdAt": {
+    "$date": "2025-02-21T03:53:53.233Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-21T04:04:16.067Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b7feb0ef01329450961752"
+  },
+  "content": "Buen tercer post",
+  "user": {
+    "$oid": "67b7f79fed392308cbc06cd9"
+  },
+  "post": {
+    "$oid": "67b7fd8fef01329450961741"
+  },
+  "createdAt": {
+    "$date": "2025-02-21T04:18:56.272Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-21T04:18:56.272Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b7fefbef01329450961762"
+  },
+  "content": "Mal tercer post 🤬😡",
+  "user": {
+    "$oid": "67b7f7b5ed392308cbc06cdc"
+  },
+  "post": {
+    "$oid": "67b7fd8fef01329450961741"
+  },
+  "createdAt": {
+    "$date": "2025-02-21T04:20:11.291Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-21T04:20:11.291Z"
+  }
+}]

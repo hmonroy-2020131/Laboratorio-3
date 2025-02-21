@@ -9,7 +9,7 @@ export const createCategory = async (req = request, res = response) => {
         if (existingCategory) {
             return res.status(400).json({
                 success: false,
-                msg: "Category already exists"
+                msg: "Category already exists ⚠️"
             });
         }
 
@@ -18,14 +18,14 @@ export const createCategory = async (req = request, res = response) => {
 
         res.status(201).json({
             success: true,
-            msg: "Category created successfully",
+            msg: "Category created successfully 🎉",
             category
         });
     } catch (error) {
         console.error(error);
         res.status(500).json({
             success: false,
-            msg: "Error creating category"
+            msg: "Error creating category ❌",
         });
     }
 };
@@ -39,20 +39,20 @@ export const updateCategory = async (req = request, res = response) => {
         if (!category) {
             return res.status(404).json({
                 success: false,
-                msg: "Category not found"
+                msg: "Category not found 🔍❌",
             });
         }
 
         res.status(200).json({
             success: true,
-            msg: "Category updated successfully",
+            msg: "Category updated successfully ✅",
             category
         });
     } catch (error) {
         console.error(error);
         res.status(500).json({
             success: false,
-            msg: "Error updating category"
+            msg: "Error updating category ❌",
         });
     }
 };
@@ -65,19 +65,19 @@ export const deleteCategory = async (req = request, res = response) => {
         if (!category) {
             return res.status(404).json({
                 success: false,
-                msg: "Category not found"
+                msg: "Category not found 🔍❌",
             });
         }
 
         res.status(200).json({
             success: true,
-            msg: "Category deleted successfully"
+            msg: "Category deleted successfully 🗑️",
         });
     } catch (error) {
         console.error(error);
         res.status(500).json({
             success: false,
-            msg: "Error deleting category"
+            msg: "Error deleting category ❌",
         });
     }
 };
@@ -93,7 +93,7 @@ export const listCategories = async (req = request, res = response) => {
         console.error(error);
         res.status(500).json({
             success: false,
-            msg: "Error fetching categories"
+            msg: "Error fetching categories ❌"
         });
     }
 };

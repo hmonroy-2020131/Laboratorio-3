@@ -1,0 +1,38 @@
+[{
+  "_id": {
+    "$oid": "67b7fa21ef01329450961706"
+  },
+  "title": "Mi segundo post 😁👌",
+  "category": {
+    "$oid": "67b7cc7d9019511dbbcf02e6"
+  },
+  "content": "Este es mi segundo post de tecnologia",
+  "user": {
+    "$oid": "67b7f785ed392308cbc06cd6"
+  },
+  "createdAt": {
+    "$date": "2025-02-21T03:59:29.077Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-21T04:11:16.603Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b7fd8fef01329450961741"
+  },
+  "title": "Mi tercer post",
+  "category": {
+    "$oid": "67b7cc7d9019511dbbcf02e6"
+  },
+  "content": "Este es mi tercer post de tecnologia",
+  "user": {
+    "$oid": "67b7af91c1562f6897314da9"
+  },
+  "createdAt": {
+    "$date": "2025-02-21T04:14:07.076Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-21T04:14:07.076Z"
+  }
+}]

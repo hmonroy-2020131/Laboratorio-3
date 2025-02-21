@@ -14,7 +14,7 @@ export const generarJWT = (uid = ' ') => {
             },
 
             (err,token) =>{
-                err ? (console.log(err), reject('No se pudo generar el token')) : resolve(token);
+                err ? (console.log(err), reject('Could not generate the token ❌')) : resolve(token);
             }
         );
     });

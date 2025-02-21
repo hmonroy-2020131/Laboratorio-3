@@ -1,0 +1,245 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Todo",
+    "collectionId": "819de584-e470-4826-89ff-c138241e0a82",
+    "dateExported": "2025-02-21T05:53:01.433Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "efc4da40-6029-4c47-a721-22d5b2cf7601",
+            "colId": "819de584-e470-4826-89ff-c138241e0a82",
+            "containerId": "",
+            "name": "register",
+            "url": "http://localhost:3001/Laboratorio3/v1/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-20T22:40:08.999Z",
+            "modified": "2025-02-21T03:49:09.573Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Pablo\",\n    \"surname\": \"Menendez\",\n    \"username\": \"pmenendez\",\n    \"email\": \"pmenendez@gmail.com\",\n    \"password\": \"12345678\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "e2600581-b0bd-4e18-848c-8b002a7de97f",
+            "colId": "819de584-e470-4826-89ff-c138241e0a82",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3001/Laboratorio3/v1/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-02-20T22:41:47.043Z",
+            "modified": "2025-02-21T04:19:09.477Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"email\": \"pmenendez@gmail.com\",\n    \"password\": \"12345678\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "b6dae3b9-6571-4bb2-b655-9d3dfddffc8c",
+            "colId": "819de584-e470-4826-89ff-c138241e0a82",
+            "containerId": "",
+            "name": "editar",
+            "url": "http://localhost:3001/Laboratorio3/v1/users/edit",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2025-02-20T23:28:35.793Z",
+            "modified": "2025-02-20T23:32:24.112Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3YWY5MWMxNTYyZjY4OTczMTRkYTkiLCJpYXQiOjE3NDAwOTQxMjMsImV4cCI6MTc0MDA5NzcyM30.9kh3vKzEElTglk9XtleIiXrgmLMyoUULejMR8mrJqzM"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"username\": \"eithanmv\",\r\n    \"password\": \"987654321\",\r\n    \"newPassword\": \"12345678\"\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "3c2a8c0a-9fbb-47c6-a1c6-5bb35b44c5c4",
+            "colId": "819de584-e470-4826-89ff-c138241e0a82",
+            "containerId": "",
+            "name": "buscar por token",
+            "url": "http://localhost:3001/Laboratorio3/v1/users/profile",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2025-02-20T23:34:05.554Z",
+            "modified": "2025-02-20T23:35:13.140Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3YWY5MWMxNTYyZjY4OTczMTRkYTkiLCJpYXQiOjE3NDAwOTQxMjMsImV4cCI6MTc0MDA5NzcyM30.9kh3vKzEElTglk9XtleIiXrgmLMyoUULejMR8mrJqzM"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"x-token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3YWY5MWMxNTYyZjY4OTczMTRkYTkiLCJpYXQiOjE3NDAwOTQxMjMsImV4cCI6MTc0MDA5NzcyM30.9kh3vKzEElTglk9XtleIiXrgmLMyoUULejMR8mrJqzM\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "2a8c2249-32ff-4bcf-ab66-25aa422ada7d",
+            "colId": "819de584-e470-4826-89ff-c138241e0a82",
+            "containerId": "",
+            "name": "agregar categoria",
+            "url": "http://localhost:3001/Laboratorio3/v1/category/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2025-02-21T00:33:43.041Z",
+            "modified": "2025-02-21T04:16:40.436Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3YWY5MWMxNTYyZjY4OTczMTRkYTkiLCJpYXQiOjE3NDAxMTEzNTEsImV4cCI6MTc0MDExNDk1MX0.SW_poiV-ggacDmEDvFViQvHUd8Iv2cnmWUA7-9IUom4"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Videojuegos\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "955fa502-4d10-44f9-a009-a6f137977134",
+            "colId": "819de584-e470-4826-89ff-c138241e0a82",
+            "containerId": "",
+            "name": "agregar post",
+            "url": "http://localhost:3001/Laboratorio3/v1/post/",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2025-02-21T00:45:05.386Z",
+            "modified": "2025-02-21T04:14:07.095Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3YWY5MWMxNTYyZjY4OTczMTRkYTkiLCJpYXQiOjE3NDAxMTEyMTQsImV4cCI6MTc0MDExNDgxNH0.xh253yaIbKDggY1msPG0FJjPen6BfYIbWHV5s2yjpow"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"Mi tercer post\",\n    \"category\": \"67b7cc7d9019511dbbcf02e6\",\n    \"content\": \"Este es mi tercer post de tecnologia\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "78d4d6a4-755c-49dd-a85b-aa73276974f2",
+            "colId": "819de584-e470-4826-89ff-c138241e0a82",
+            "containerId": "",
+            "name": "listar categorias para todos",
+            "url": "http://localhost:3001/Laboratorio3/v1/category/listar",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2025-02-21T04:22:10.799Z",
+            "modified": "2025-02-21T04:22:28.320Z",
+            "headers": []
+        },
+        {
+            "_id": "8cbe18d0-23e8-41be-a900-ebbbe197dbd8",
+            "colId": "819de584-e470-4826-89ff-c138241e0a82",
+            "containerId": "",
+            "name": "agregar comentario",
+            "url": "http://localhost:3001/Laboratorio3/v1/comment",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2025-02-21T03:47:40.913Z",
+            "modified": "2025-02-21T04:20:11.314Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3ZjdiNWVkMzkyMzA4Y2JjMDZjZGMiLCJpYXQiOjE3NDAxMTE1NDksImV4cCI6MTc0MDExNTE0OX0.aQMnZuaaCkSVLSKQRa33XQsvBuXl02sHjZsqoaHf3wo"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"content\": \"Mal tercer post 🤬😡\",\n  \"post\": \"67b7fd8fef01329450961741\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "907d363e-73c5-4656-942f-6e357c3bfc95",
+            "colId": "819de584-e470-4826-89ff-c138241e0a82",
+            "containerId": "",
+            "name": "editar post",
+            "url": "http://localhost:3001/Laboratorio3/v1/post/67b7fa21ef01329450961706",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2025-02-21T04:08:54.353Z",
+            "modified": "2025-02-21T04:11:16.607Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3Zjc4NWVkMzkyMzA4Y2JjMDZjZDYiLCJpYXQiOjE3NDAxMTEwNTQsImV4cCI6MTc0MDExNDY1NH0.G_QFxCsHucn-yZvAYLyltYki41BGfZc64eH58gXNb6I"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"Mi segundo post 😁👌\",\n    \"category\": \"67b7cc7d9019511dbbcf02e6\",\n    \"content\": \"Este es mi segundo post de tecnologia\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0e5d39db-3448-4da8-9e63-85830b9c3ce2",
+            "colId": "819de584-e470-4826-89ff-c138241e0a82",
+            "containerId": "",
+            "name": "editar comentario",
+            "url": "http://localhost:3001/Laboratorio3/v1/comment/67b7f8d1d9fdda060d880516",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2025-02-21T03:55:00.336Z",
+            "modified": "2025-02-21T04:04:16.074Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3YWY5MWMxNTYyZjY4OTczMTRkYTkiLCJpYXQiOjE3NDAxMTA2MjgsImV4cCI6MTc0MDExNDIyOH0.-xLbN0btW3Uw1OC2B8ezksBnB9S8XKC6S8PX8epZ5bY"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"content\": \"Buen primer post\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "08fdd1c7-6da7-4be1-9996-61aa862f6fb2",
+            "colId": "819de584-e470-4826-89ff-c138241e0a82",
+            "containerId": "",
+            "name": "eliminar post",
+            "url": "http://localhost:3001/Laboratorio3/v1/post/67b7f493de3933c3f6ecd83a",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2025-02-21T04:11:51.812Z",
+            "modified": "2025-02-21T04:13:42.861Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3YWY5MWMxNTYyZjY4OTczMTRkYTkiLCJpYXQiOjE3NDAxMTEyMTQsImV4cCI6MTc0MDExNDgxNH0.xh253yaIbKDggY1msPG0FJjPen6BfYIbWHV5s2yjpow"
+                }
+            ]
+        },
+        {
+            "_id": "cc863dad-633a-4dd1-b066-0be360dee04b",
+            "colId": "819de584-e470-4826-89ff-c138241e0a82",
+            "containerId": "",
+            "name": "eliminar comentario",
+            "url": "http://localhost:3001/Laboratorio3/v1/comment/67b7fa5eef0132945096170b",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2025-02-21T04:02:04.502Z",
+            "modified": "2025-02-21T04:02:51.412Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3Zjc4NWVkMzkyMzA4Y2JjMDZjZDYiLCJpYXQiOjE3NDAxMTA1NDQsImV4cCI6MTc0MDExNDE0NH0.lU3Opgn4-j1h_qR7icfwMD_b81xNcvxIyoYORv5gVMo"
+                }
+            ]
+        }
+    ],
+    "ref": "meAnwLJCP2gx5DyDFM7Lv7myCy0ZtZ7R89_ubPNaYdSE2Q2I2j92wfrcRVy_EflPkru_pCLXMg5KTqVCY08D-Q"
+}

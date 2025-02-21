@@ -33,9 +33,9 @@ const routes =(app) => {
 const conectarDB = async () => {
     try{
         await dbConnection();
-        console.log("Conexion a la base de datos exitosa");
+        console.log("Conexion a la base de datos exitosa ✅");
     }catch(error){
-        console.error('Error Conectando a la base de datos', error);
+        console.error('Error Conectando a la base de datos ❌', error);
         process.exit(1);
     }  
 }
@@ -49,9 +49,9 @@ export const initServer = async () =>{
         conectarDB();
         routes(app);
         app.listen(port);
-        console.log(`Server running on port: ${port}`);
+        console.log(`Server running on port: ${port} 🚀`);
     } catch (err) {
-        console.log(`Server init failed: ${err}`)
+        console.log(`Server init failed: ${err} ⚠️`);
     }
  
     
