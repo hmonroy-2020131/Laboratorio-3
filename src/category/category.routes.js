@@ -8,6 +8,8 @@ import { existingCategory } from "../helpers/db-validator.js";
 
 const router = Router();
 
+router.get("/listar", listCategories);
+
 router.post(
     "/",
     [
