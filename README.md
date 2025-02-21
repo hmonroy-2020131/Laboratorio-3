@@ -1,1 +1,1 @@
-Subiendo modelos y validaciones necesarias.
+Post agregados sin categorias
