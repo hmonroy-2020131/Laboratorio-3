@@ -1,1 +1,1 @@
-Subiendo modelos y validaciones necesarias.
+Proyecto terminado y data agregada
