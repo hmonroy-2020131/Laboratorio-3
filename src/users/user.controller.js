@@ -40,7 +40,7 @@ export const updateUser = async (req, res = response) => {
 
         res.status(200).json({
             success: true,
-            msg: "User updated successfully",
+            msg: "User updated successfully 😁👌",
             user,
         });
     } catch (error) {

@@ -7,7 +7,8 @@ import morgan from 'morgan';
 import { dbConnection } from './mongo.js';
 import limiter from '../src/middlewares/validar-cant-peticion.js';
 import authRoutes from '../src/auth/auth.routes.js'
-import userRouter from '../src/users/user.routes.js'
+import userRoutes from '../src/users/user.routes.js'
+import postRoutes from '../src/post/post.routes.js'
  
 const middlewares = (app) => {
     app.use(express.urlencoded({ extended: false }));
@@ -20,7 +21,8 @@ const middlewares = (app) => {
 
 const routes =(app) => {
     app.use("/Laboratorio3/v1/auth", authRoutes);
-    app.use("/Laboratorio3/v1/users", userRouter )
+    app.use("/Laboratorio3/v1/users", userRoutes )
+    app.use("/Laboratorio3/v1/post", postRoutes )
 }
  
  

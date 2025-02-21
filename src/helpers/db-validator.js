@@ -1,4 +1,5 @@
 import User from '../users/user.model.js';
+import Post from "../post/post.model.js";
 
 export const existenteEmail = async (email = '') =>{
     const existeEmail = await User.findOne({ email });
@@ -16,3 +17,11 @@ export const existeUsuarioById = async (id = '') => {
     }
 }
 
+
+export const existingPost = async (id = '') => {
+    const post = await Post.findById(id);
+
+    if (!post) {
+        throw new Error(`The post with ID ${id} does not exist.`);
+    }
+};
